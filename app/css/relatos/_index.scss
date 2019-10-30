@@ -1,0 +1,22 @@
+.relatos-inside {
+  padding: 64px 0;
+  background-color: #fff;
+}
+
+.relatos-content {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  .relato-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    margin-bottom: 32px;
+  }
+
+  p,
+  li {
+    margin: 16px 0;
+  }
+}

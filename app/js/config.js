@@ -1,0 +1,1 @@
+const baseURL = 'http://instituto-nascer.local'

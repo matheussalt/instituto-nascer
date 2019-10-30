@@ -1,0 +1,77 @@
+.sobre-equipe {
+  width: 100%;
+  background-color: $gold;
+  padding: 64px 0;
+
+  &.black {
+    background-color: #78797b;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      align-self: center;
+      flex-direction: column;
+      margin-bottom: 32px;
+
+      svg {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.equipe-wrapper {
+  .profissional {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+
+    .profissional-img {
+      width: 100%;
+      height: 340px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    strong {
+      background-color: $black;
+      color: #fff;
+      width: 100%;
+      padding: 16px 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .equipe-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+
+    .profissional {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .equipe-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .equipe-wrapper .profissional .profissional-img {
+    height: 260px;
+  }
+}

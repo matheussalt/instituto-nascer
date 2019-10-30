@@ -1,0 +1,17 @@
+.yt-acc {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+
+  ion-icon {
+    color: #fff;
+    margin-right: 4px;
+  }
+}
+
+@import './galeria';
+@import './videos';

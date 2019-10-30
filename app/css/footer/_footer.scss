@@ -1,0 +1,162 @@
+.footer {
+  width: 100%;
+  background-color: $black;
+  padding: 64px 0 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-footer {
+      width: 200px;
+      margin-bottom: 32px;
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+
+      &.animar {
+        animation: reset 0.5s ease-out forwards;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 450px;
+
+  > div {
+    margin-bottom: 32px;
+  }
+
+  h2.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 16px;
+
+    svg use {
+      fill: $gold;
+    }
+  }
+}
+
+.footer-instituto {
+  width: 100%;
+
+  p {
+    color: #fff;
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+
+    &.animar {
+      animation: reset 0.5s ease-out forwards;
+    }
+  }
+
+  .footer-hemmerson {
+    background-color: #fff;
+    margin-top: 32px;
+    padding: 16px 32px;
+    display: inline-block;
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+
+    &.animar {
+      animation: reset 0.5s ease-out forwards;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+}
+
+.fale-conosco {
+  ul li {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+
+    &.animar {
+      animation: reset 0.5s ease-out forwards;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+
+      ion-icon {
+        width: 20px;
+        margin-right: 8px;
+        font-size: 16px;
+        color: $gold;
+      }
+
+      p {
+        flex: 1;
+        color: #ffffff;
+      }
+    }
+
+    &.wpp-footer {
+      width: 100%;
+      text-align: center;
+      margin: 16px 0;
+
+      a {
+        padding: 8px 16px;
+        border-radius: 28px;
+        background-color: $gold;
+        justify-content: center;
+
+        p {
+          color: #fff;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 0.2em;
+          flex: unset;
+          line-height: 14px;
+          flex: 1;
+        }
+
+        ion-icon {
+          color: $black;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &.midias-footer {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .footer {
+    padding: 128px 0 0;
+  }
+
+  .footer-wrapper {
+    max-width: unset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 64px 0 128px;
+
+    > div {
+      margin-bottom: 0;
+    }
+
+    h2.title {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@import './form';
+@import './map';
+@import './rodape';
+@import './popup';

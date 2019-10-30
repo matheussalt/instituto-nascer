@@ -1,0 +1,59 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35vh;
+  background-color: #2e2e2ecd;
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+
+  &.animar {
+    animation: reset 1.2s ease-out forwards;
+  }
+}
+
+.phrase-banner {
+  width: 90%;
+  max-width: 600px;
+  z-index: 1;
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  strong {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .banner {
+    height: 80vh;
+  }
+
+  .phrase-banner {
+    h1 {
+      font-size: 52px;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    strong {
+      font-size: 24px;
+    }
+  }
+}
+
+@import './bannerCarrossel';

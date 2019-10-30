@@ -1,0 +1,31 @@
+.imprensa-inside {
+  width: 100%;
+  padding: 64px 0;
+  background-color: #fff;
+}
+
+.imprensa-content {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+
+  > img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 32px;
+  }
+
+  a {
+    color: $gold;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .imprensa-content {
+    > img {
+      height: 420px;
+      margin-bottom: 64px;
+    }
+  }
+}

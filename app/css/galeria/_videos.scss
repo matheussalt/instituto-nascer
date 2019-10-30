@@ -1,0 +1,23 @@
+.video-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+
+  .video-frame {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .video-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .video-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

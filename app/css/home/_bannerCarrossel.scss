@@ -1,0 +1,123 @@
+.banner-carrossel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.9s opacity ease-out;
+
+    &.ativo {
+      opacity: 1;
+    }
+  }
+}
+
+.banner-control-left,
+.banner-control-right {
+  display: none;
+}
+
+.banner-img-selector {
+  position: absolute;
+  bottom: -7.5vw;
+  width: 90%;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-50%, 0);
+
+  .img-selector {
+    width: 32%;
+    height: 15vw;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #c2b49a;
+      opacity: 0.4;
+      transition: 0.3s opacity ease-out;
+    }
+
+    &:hover::after {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .banner-control-left,
+  .banner-control-right {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+
+    &:hover {
+      background-color: $black;
+
+      ion-icon {
+        color: #fff;
+      }
+    }
+
+    ion-icon {
+      font-size: 20px;
+      color: $black;
+      transition: 0.3s background-color ease-out;
+    }
+  }
+
+  .banner-control-right {
+    right: 30px;
+    left: unset;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .banner-img-selector {
+    bottom: 30px;
+    right: 30px;
+    left: unset;
+    transform: unset;
+    width: 35%;
+
+    .img-selector {
+      height: 7vw;
+    }
+  }
+}

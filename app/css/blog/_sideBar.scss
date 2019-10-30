@@ -1,0 +1,84 @@
+.barra-blog {
+  width: 100%;
+  max-width: 240px;
+  margin-top: 32px;
+
+  .barra-logo {
+    width: 100%;
+    background-color: #efefef;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 180px;
+    }
+  }
+
+  .barra-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+
+    input {
+      width: 90%;
+      height: 20px;
+      padding: 16px;
+      border-radius: 20px;
+      border: 2px solid $gold;
+      background-color: #fff;
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.05);
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+
+      ion-icon {
+        color: $black;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .barra-categorias {
+    width: 100%;
+    background-color: $gold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px 0 16px;
+
+    a {
+      width: 180px;
+      display: block;
+      background-color: $black;
+      color: #fff;
+      border-radius: 20px;
+      border: 1px solid $black;
+      padding: 4px 16px;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 16px;
+      transition: 0.3s color, 0.3s background-color;
+
+      &:hover {
+        color: $black;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .barra-blog {
+    margin: 0;
+    margin-left: 32px;
+  }
+}

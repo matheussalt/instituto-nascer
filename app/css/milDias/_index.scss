@@ -1,0 +1,68 @@
+.banner-interno {
+  .title {
+    flex-direction: column;
+    text-align: center;
+
+    svg {
+      margin: 0;
+    }
+  }
+}
+
+.programa {
+  width: 100%;
+  padding: 64px 0;
+  background-color: $gold;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.programa-txt {
+  width: 100%;
+  max-width: 580px;
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 16px 0;
+    font-size: 26px;
+  }
+
+  p {
+    margin: 16px 0;
+  }
+}
+
+.programa-img {
+  width: 100%;
+  height: 100vw;
+  max-width: 450px;
+  max-height: 320px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .programa .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .programa-txt {
+    width: 50%;
+  }
+
+  .programa-img {
+    max-height: 420px;
+  }
+}
+
+@import './calculo';
+@import './content';

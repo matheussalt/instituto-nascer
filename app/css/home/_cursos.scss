@@ -1,0 +1,71 @@
+.home-cursos {
+  width: 100%;
+  background-color: $gold;
+  padding: 64px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      flex-direction: column;
+
+      svg {
+        margin: 0;
+      }
+    }
+
+    > .cta {
+      border-color: #fff;
+      color: #fff;
+      align-self: center;
+
+      &:hover {
+        background-color: #fff;
+        color: $black;
+      }
+    }
+  }
+}
+
+.home-cursos-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  padding: 0 32px;
+  margin: 32px 0;
+
+  .cursos-left,
+  .cursos-right {
+    @extend %buttonSlide;
+    background-color: #fff;
+
+    ion-icon {
+      color: $black;
+    }
+  }
+
+  .cursos-left {
+    left: 0;
+  }
+
+  .cursos-right {
+    right: 0;
+  }
+
+  .home-cursos-inside {
+    display: -webkit-box;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .home-cursos {
+    padding: 128px 0;
+  }
+
+  .home-cursos-wrapper {
+    margin: 64px 0;
+    padding: 0 64px;
+  }
+}

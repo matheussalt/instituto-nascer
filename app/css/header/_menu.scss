@@ -1,0 +1,135 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #01010100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s visibility, 0.8s opacity, 0.8s background-color;
+  z-index: 99;
+
+  &.active {
+    background-color: #01010188;
+    opacity: 1;
+    visibility: visible;
+
+    > div {
+      transform: translate3d(0, 0, 0);
+      box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100vh;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: $gold;
+    transform: translate3d(60vw, 0, 0);
+    transition: 0.8s transform, 0.8s box-shadow;
+  }
+
+  ul li {
+    text-align: center;
+    margin: 15px 0;
+
+    a {
+      font-size: 18px;
+      line-height: 22px;
+      color: #fff;
+      border-radius: 20px;
+      transition: 0.3s background-color;
+      padding: 5px 20px;
+    }
+
+    &.current-menu-item a,
+    a:hover {
+      background-color: $black;
+    }
+  }
+}
+
+.menu-item-has-children {
+  > a::after {
+    content: '\25bc';
+    font-size: 12px;
+    margin-left: 4px;
+  }
+
+  .sub-menu {
+    margin: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: none;
+  }
+
+  &:hover .sub-menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu ul li {
+    margin: 20px 0;
+
+    a {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .menu {
+    position: relative;
+    height: auto;
+    top: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+
+    > div {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      position: static;
+      transform: translate3d(0, 0, 0);
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 960px;
+        width: 90%;
+
+        li a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .menu-item-has-children {
+    position: relative;
+
+    .sub-menu {
+      position: absolute;
+      display: none;
+      background-color: $gold;
+      transform: translate(-50%, -10px);
+      width: 180px;
+      left: 50%;
+    }
+
+    &:hover .sub-menu {
+      display: block;
+    }
+  }
+}
