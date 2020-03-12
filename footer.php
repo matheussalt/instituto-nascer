@@ -69,27 +69,27 @@
           </li>
 
           <li data-animar>
-            <a href="https://google.maps" target="_blank">
+            <a href="https://goo.gl/maps/XQoWSuEqkBdVQvgG7" target="_blank">
               <ion-icon name="pin"></ion-icon>
               <p>Avenida Raja Gabaglia, 665, Cidade Jardim - Belo Horizonte</p>
             </a>
           </li>
 
           <li class="wpp-footer" data-animar>
-            <a href="https://wa.me/+5531992790010" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+553131810823" target="_blank">
               <ion-icon name="logo-whatsapp"></ion-icon>
               <p>Agendamento, consultas e ultrassom via whatsapp</p>
             </a>
           </li>
 
           <li class="midias-footer" data-animar>
-            <a href="https://instagram.com/" target="_blank">
+            <a href="https://instagram.com/institutonascer" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            <a href="https://facebook.com/" target="_blank">
+            <a href="https://facebook.com/institutonascer" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="https://youtube.com/" target="_blank">
+            <a href="https://youtube.com/channel/UC8pgjcVQowTYNmrkQA7owUg" target="_blank">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
@@ -104,7 +104,7 @@
           FALE CONOSCO
         </h2>
 
-        <? echo do_shortcode('[contact-form-7 id="29" title="Contact form 1"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="29" title="Contact form 1"]'); ?>
       </div>
     </div>
   </div>
@@ -130,6 +130,10 @@
 <?php wp_footer(); ?>
 
 <div id="popup-galeria"></div>
+
+<a class="wpp-dot" href="https://api.whatsapp.com/send?phone=+553131810823" target="_blank">
+  <ion-icon name="logo-whatsapp"></ion-icon>
+</a>
 
 <div style="display: none">
   <svg xmlns="http://www.w3.org/2000/svg" width="54.779" height="61.199" viewBox="0 0 54.779 61.199" id="logo-simbolo">

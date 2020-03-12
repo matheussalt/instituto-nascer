@@ -1,6 +1,6 @@
 <style>
 .banner-interno {
-  background-image: url('<?=catch_that_image(1)?>');
+  background-image: url('<?=catch_that_image(2)?>');
   height: 220px;
   text-align: center;
 }
@@ -12,7 +12,7 @@
 @media screen and (min-width: 650px) {
   .banner-interno {
     height: 320px;
-    background-image: url('<?=catch_that_image(0)?>');
+    background-image: url('<?=catch_that_image(1)?>');
   }
 }
 </style>
@@ -27,19 +27,19 @@
         Cursos
       </h2>
 
-      <h3 data-animar>Sobre o curso</h3>
+      <!-- <h3 data-animar>Sobre o curso</h3> -->
 
       <div data-animar class="curso-content"><?=the_content()?></div>
 
       <h3 data-animar>Inscrições</h3>
 
-      <ul data-animar>
+      <ul class="dados" data-animar>
         <li>(31) 3262-3538</li>
         <li>(31) 99323-0023</li>
         <li>Email: cursos@institutonascer.com.br</li>
       </ul>
 
-      <a href="https://wa.me/5531993230023" target="_blank" class="wpp" data-animar>
+      <a href="https://wa.me/553131810823" target="_blank" class="wpp" data-animar>
         <ion-icon name="logo-whatsapp"></ion-icon>
         <p>CONTATO VIA WHATSAPP</p>
       </a>

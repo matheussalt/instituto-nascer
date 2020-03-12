@@ -13,11 +13,14 @@ function catch_that_image($sizex) {
 		{
 			if($sizex == "1")
 			{
-  				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
-			}
-			else
-			{
   				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'big');
+			}
+			else if ($sizex == "2")
+			{
+  				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium');
+			} else if ($sizex == "3")
+			{
+  				$fotoPega = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
 			}
 			$first_img = $fotoPega[0];
 		} 
@@ -83,7 +86,7 @@ function has_children() {
 }
 ?>
 
-<?
+<?php
 add_filter('wpcf7_form_elements', function($content) {
     $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
 

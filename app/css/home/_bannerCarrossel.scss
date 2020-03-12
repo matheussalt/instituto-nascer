@@ -6,6 +6,7 @@
   right: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
   img {
     position: absolute;
@@ -19,6 +20,8 @@
     mix-blend-mode: multiply;
     opacity: 0;
     transition: 0.9s opacity ease-out;
+    transform-origin: center;
+    animation: 20s banner ease-in-out infinite;
 
     &.ativo {
       opacity: 1;

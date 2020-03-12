@@ -11,34 +11,34 @@ get_header(); ?>
 <section class="banner" data-animar>
   <div class="banner-carrossel">
     <picture>
+      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/banner3.webp"
+        type="image/webp" />
+      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/banner3.jpg"
+        type="image/jpg" />
+      <source srcset="<?=get_template_directory_URI()?>/img/webp/banner3@2x.webp" type="image/webp" />
+      <source srcset="<?=get_template_directory_URI()?>/img/rsc/banner3@2x.jpg" type="image/jpg" />
+      <img class="ativo" src="<?=get_template_directory_URI()?>/img/rsc/banner3@2x.jpg" type="image/jpg"
+        alt="Instituto Nascer" />
+    </picture>
+
+    <picture>
       <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/banner.webp"
         type="image/webp" />
       <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/banner.jpg"
         type="image/jpg" />
       <source srcset="<?=get_template_directory_URI()?>/img/webp/banner@2x.webp" type="image/webp" />
       <source srcset="<?=get_template_directory_URI()?>/img/rsc/banner@2x.jpg" type="image/jpg" />
-      <img src="<?=get_template_directory_URI()?>/img/rsc/banner@2x.jpg" type="image/jpg" alt="Instituto Nascer"
-        class="ativo" />
+      <img src="<?=get_template_directory_URI()?>/img/rsc/banner@2x.jpg" type="image/jpg" alt="Instituto Nascer" />
     </picture>
 
     <picture>
-      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/instituto7.webp"
+      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/banner2.webp"
         type="image/webp" />
-      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/instituto7.jpg"
+      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/banner2.jpg"
         type="image/jpg" />
-      <source srcset="<?=get_template_directory_URI()?>/img/webp/instituto7@2x.webp" type="image/webp" />
-      <source srcset="<?=get_template_directory_URI()?>/img/rsc/instituto7@2x.jpg" type="image/jpg" />
-      <img src="<?=get_template_directory_URI()?>/img/rsc/instituto7@2x.jpg" type="image/jpg" alt="Instituto Nascer" />
-    </picture>
-
-    <picture>
-      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/instituto2.webp"
-        type="image/webp" />
-      <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/instituto2.jpg"
-        type="image/jpg" />
-      <source srcset="<?=get_template_directory_URI()?>/img/webp/instituto2@2x.webp" type="image/webp" />
-      <source srcset="<?=get_template_directory_URI()?>/img/rsc/instituto2@2x.jpg" type="image/jpg" />
-      <img src="<?=get_template_directory_URI()?>/img/rsc/instituto2@2x.jpg" type="image/jpg" alt="Instituto Nascer" />
+      <source srcset="<?=get_template_directory_URI()?>/img/webp/banner2@2x.webp" type="image/webp" />
+      <source srcset="<?=get_template_directory_URI()?>/img/rsc/banner2@2x.jpg" type="image/jpg" />
+      <img src="<?=get_template_directory_URI()?>/img/rsc/banner2@2x.jpg" type="image/jpg" alt="Instituto Nascer" />
     </picture>
   </div>
 
@@ -53,6 +53,16 @@ get_header(); ?>
   <div class="banner-img-selector">
     <div class="img-selector">
       <picture>
+        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/banner3.webp"
+          type="image/webp" />
+        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/banner3.jpg"
+          type="image/jpg" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/banner3.jpg" type="image/jpg" alt="Instituto Nascer" />
+      </picture>
+    </div>
+
+    <div class="img-selector">
+      <picture>
         <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/banner.webp"
           type="image/webp" />
         <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/banner.jpg"
@@ -63,28 +73,18 @@ get_header(); ?>
 
     <div class="img-selector">
       <picture>
-        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/instituto7.webp"
+        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/banner2.webp"
           type="image/webp" />
-        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/instituto7.jpg"
+        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/banner2.jpg"
           type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/instituto7.jpg" type="image/jpg" alt="Instituto Nascer" />
-      </picture>
-    </div>
-
-    <div class="img-selector">
-      <picture>
-        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/webp/instituto2.webp"
-          type="image/webp" />
-        <source media="(max-width: 600px)" srcset="<?=get_template_directory_URI()?>/img/rsc/instituto2.jpg"
-          type="image/jpg" />
-        <img src="<?=get_template_directory_URI()?>/img/rsc/instituto2.jpg" type="image/jpg" alt="Instituto Nascer" />
+        <img src="<?=get_template_directory_URI()?>/img/rsc/banner2.jpg" type="image/jpg" alt="Instituto Nascer" />
       </picture>
     </div>
   </div>
 
   <div class="phrase-banner">
     <h1>Instituto Nascer</h1>
-    <strong>Um novo jeito de cuidar</strong>
+    <strong>Experiência única de cuidado</strong>
   </div>
 </section>
 
@@ -98,18 +98,19 @@ get_header(); ?>
       </div>
 
       <ul>
-        <?php $mypages = get_pages( array( 'child_of' => 11, 'sort_order' => 'asc', 'number' => 13 ) ); 
-        foreach( $mypages as $page ) { ?>
+        <? query_posts( array( 'post_type' => 'page', 'posts_per_page' => '8', 'post_parent' => 11, 'order' => 'asc', 'orderby' => 'title' ) );  ?>
+        <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+
         <li>
-          <a href="<?=get_page_link( $page->ID );?>" data-animar>
-            <?php if (has_post_thumbnail( $page->ID ) ): ?>
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'single-post-thumbnail' ); ?>
-            <img src="<?=$image[0]?>" alt="Obstetrícia" />
-            <?php endif; ?>
-            <h3><?=$page->post_title;?></h3>
+          <a href="<?=the_permalink();?>" data-animar>
+            <img src="<?=catch_that_image(2)?>" alt="Obstetrícia" />
+            <h3><?=the_title();?></h3>
           </a>
         </li>
-        <? } ?>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
       </ul>
 
       <div class="servicos-right">
@@ -203,7 +204,7 @@ get_header(); ?>
 
     <h2 data-animar>NÚMEROS DE BÊBES BEM NASCIDOS</h2>
 
-    <h3 data-animar>+950</h3>
+    <h3 data-animar>+1000</h3>
   </div>
 </section>
 

@@ -38,15 +38,20 @@
 
   h3 {
     @extend %titleSerif;
+
+    opacity: 1;
+    transform: unset;
   }
 
   ul {
     margin-bottom: 32px;
-    opacity: 0;
-    transform: translate3d(0, -30px, 0);
 
-    &.animar {
-      animation: reset 0.5s ease-out forwards;
+    &:not(.dados) {
+      padding-left: 20px;
+
+      li {
+        list-style-type: disc;
+      }
     }
   }
 

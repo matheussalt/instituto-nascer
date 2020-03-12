@@ -1,7 +1,7 @@
 <div class="home-cursos-item" data-animar>
   <div class="home-cursos-img">
     <ion-icon name="bookmark"></ion-icon>
-    <img src="<?=get_template_directory_URI()?>/img/rsc/enfermagem@2x.jpg" />
+    <img src="<?=catch_that_image(1)?>" />
   </div>
   <div class="home-cursos-txt">
     <h4><?=the_title()?></h4>

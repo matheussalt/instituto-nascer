@@ -30,7 +30,7 @@
 
       <h3 data-animar><?=the_title()?></h3>
 
-      <img src="<?=catch_that_image(0)?>" alt="<?=the_title()?>" />
+      <!-- <img src="<?=catch_that_image(0)?>" alt="<?=the_title()?>" /> -->
 
       <div class="blog-content">
         <?=the_content()?>

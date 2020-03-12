@@ -90,7 +90,7 @@ get_header(); ?>
         </li>
 
         <li class="wpp-footer" data-animar>
-          <a href="https://wa.me/553199999999" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=+553131810823" target="_blank">
             <ion-icon name="logo-whatsapp"></ion-icon>
             <p>CONTATO VIA WHATSAPP</p>
           </a>

@@ -75,8 +75,8 @@ get_header(); ?>
 
     <div class="menu-mildias">
       <button type="button" class="ativo">CUIDADO</button>
-      <button type="button">PAI 1</button>
-      <button type="button">PAI 2</button>
+      <button type="button">Programa Parto - PAI 1</button>
+      <button type="button">Programa Parto - PAI 2</button>
     </div>
 
     <div id="mildias-txt" class="ativo">

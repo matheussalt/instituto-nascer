@@ -126,7 +126,7 @@
   <header class="header" data-animar>
     <div class="header-wrapper">
       <div class="header-left">
-        <a href="<?=site_url()?>"><img src="<?=get_template_directory_URI()?>/img/rsc/logo.png"
+        <a href="<?=site_url()?>"><img src="<?=get_template_directory_URI()?>/img/rsc/logo.svg"
             alt="Logotipo Instituto Nascer" /></a>
 
         <div class="search-header">
@@ -145,24 +145,24 @@
           <span>(31) 3262-3538</span>
         </a>
 
-        <a href="https://wa.me/+553992790010" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=+553131810823" target="_blank">
           <ion-icon name="logo-whatsapp"></ion-icon>
-          <span>(31) 9 9279-0010</span>
+          <span>(31) 3181-0823</span>
         </a>
 
         <ul class="midias-header">
           <li>
-            <a href="https://instagram.com/" target="_blank">
+            <a href="https://instagram.com/institutonascer" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://facebook.com/" target="_blank">
+            <a href="https://facebook.com/institutonascer" target="_blank">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://youtube.com/" target="_blank">
+            <a href="https://youtube.com/channel/UC8pgjcVQowTYNmrkQA7owUg" target="_blank">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
@@ -177,32 +177,37 @@
     <nav class="menu">
       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
     </nav>
+
+    <a data-animar class="telefone-header" href="tel:3132623538" target="_blank">
+      <ion-icon name="call"></ion-icon>
+      <span>(31) 3262-3538</span>
+    </a>
   </header>
 
-  <? if (!is_front_page()) { ?>
+  <?php if (!is_front_page()) { ?>
   <section class="banner-interno" data-animar>
     <div class="container">
-      <? if (is_page(20)) { ?>
+      <?php if (is_page(20)) { ?>
       <h2 class="title" data-animar>
         <svg width="54.779" height="61.199" viewBox="0 0 54.779 61.199">
           <use xlink:href="#logo-simbolo"></use>
         </svg>
         CUIDADO E AMOR NOS PRIMEIROS DIAS
       </h2>
-      <? } ?>
+      <?php } ?>
 
-      <h1>
+      <!-- <h1>
         <?=the_title()?>
-        <?if(is_page(17)){?>
+        <?php if(is_page(17)) { ?>
         <ion-icon name="logo-youtube"></ion-icon>
-        <?}?>
-      </h1>
+        <?php } ?>
+      </h1> -->
     </div>
 
-    <?if(is_page(17)){?>
-    <a href="https://youtu.be/" class="yt-acc">
+    <?php if(is_page(17)){?>
+    <a href="https://youtu.be/channel/UC8pgjcVQowTYNmrkQA7owUg" class="yt-acc">
       <ion-icon name="logo-youtube"></ion-icon> Youtube/institutonascer
     </a>
-    <?}?>
+    <?php }?>
   </section>
-  <? } ?>
+  <?php } ?>

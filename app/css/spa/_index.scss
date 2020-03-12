@@ -1,0 +1,42 @@
+.spa {
+  padding: 64px 0;
+  background-color: #fff;
+
+  .container {
+    img {
+      width: 100%;
+      margin: 0 auto 32px;
+      max-width: 450px;
+    }
+
+    h3 {
+      @extend %titleSerif;
+      opacity: 1;
+      transform: none;
+      animation: none;
+      margin-top: 32px;
+    }
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .spa {
+    padding: 128px 0;
+
+    .container {
+      img {
+        margin: 0 32px 32px 0;
+        float: left;
+      }
+
+      .coluna {
+        display: flex;
+        width: 100%;
+
+        div {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

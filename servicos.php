@@ -109,7 +109,7 @@ foreach( $mypages2 as $page2 ) { $linkpage = get_page_link( $page2->ID ); } ?>
     <h3 data-animar><?=the_title()?></h3>
 
     <div class="servico-img" data-animar>
-      <img src="<?=catch_that_image(0)?>" alt="<?=the_title()?>" />
+      <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>" />
     </div>
 
     <div class="servico-content" data-animar>
@@ -119,7 +119,7 @@ foreach( $mypages2 as $page2 ) { $linkpage = get_page_link( $page2->ID ); } ?>
     <div class="servico-contact" data-animar>
       <a href="<?=site_url()?>/contato" class="btn">SOLICITE UM ORÇAMENTO</a>
 
-      <a href="https://wa.me/553199999999" target="_blank" class="wpp">
+      <a href="https://api.whatsapp.com/send?phone=+553131810823" target="_blank" class="wpp">
         <ion-icon name="logo-whatsapp"></ion-icon>
         <p>CONTATO VIA WHATSAPP</p>
       </a>

@@ -40,19 +40,20 @@ get_header(); ?>
     <h3 data-animar>Por que fazer os cursos?</h3>
 
     <p data-animar>Se nascer é algo tão natural, tão ancestral, tão humano, por que uma mulher grávida ou casal que
-      espera um filho
-      devem fazer “cursos de preparação” ? Por que têm que aprender a parir, amamentar e cuidar de um bebê?<br /><br />
+      espera um filho devem fazer “cursos de preparação” ? Por que têm que aprender a parir, amamentar e cuidar de um
+      bebê? </br></br>
 
       Crescemos aprendendo tantas coisas, fazendo tantos cursos. Mas quando esperamos por um filho, percebemos que ainda
       faltaram tantas aulas! Natural para o contexto de nossa sociedade contemporânea, em que a mulher rompeu barreiras
       e se inseriu no mercado de trabalho e nos meios acadêmicos. Em contrapartida, se vê frequentemente insegura ao
       saber que será mãe. Sensação parecida com a dos homens. No caso deles, porém, a insegurança se deve ao fato de que
-      os novos tempos os convocam cada vez mais a dividir responsabilidades com suas parceiras. Daí a pertinência
-      dos“cursos de preparação”. Estudos científicos recentes mostraram que a participação em cursos e grupos durante a
-      gravidez melhora os resultados de saúde na gestação, no parto e no primeiro ano do bebê.<br /><br />
+      os novos tempos os convocam cada vez mais a dividir responsabilidades com suas parceiras. Daí a pertinência dos
+      “cursos de preparação”. Estudos científicos recentes mostraram que a participação em cursos e grupos durante a
+      gravidez melhora os resultados de saúde na gestação, no parto e no primeiro ano do bebê.</br></br>
 
       Bem preparados, os casais certamente terão uma vivência mais saudável da chegada de um filho, sem medos e sem
-      preconceitos.</p>
+      preconceitos.
+    </p>
   </div>
 </section>
 

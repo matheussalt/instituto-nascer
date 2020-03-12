@@ -174,7 +174,7 @@ get_header(); ?>
 
     <div class="equipe-wrapper">
 
-      <? query_posts( array( 'post_type' => 'funcionario', 'posts_per_page' => '-1', 'category_name'  => 'equipe', 'order' => 'DESC', 'orderby' => 'menu_order' ) );  ?>
+      <?php query_posts( array( 'post_type' => 'funcionario', 'posts_per_page' => '-1', 'category_name'  => 'equipe', 'order' => 'DESC', 'orderby' => 'menu_order' ) );  ?>
       <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
@@ -185,6 +185,7 @@ get_header(); ?>
 
         <div class="profissional-title">
           <strong><?=the_title()?></strong>
+          <em><?=the_field('cargo')?></em>
         </div>
       </div>
 
@@ -206,7 +207,7 @@ get_header(); ?>
 
     <div class="equipe-wrapper">
 
-      <? query_posts( array( 'post_type' => 'funcionario', 'posts_per_page' => '-1', 'category_name'  => 'colaboradores', 'order' => 'DESC', 'orderby' => 'menu_order' ) );  ?>
+      <?php query_posts( array( 'post_type' => 'funcionario', 'posts_per_page' => '-1', 'category_name'  => 'colaboradores', 'order' => 'DESC', 'orderby' => 'menu_order' ) );  ?>
       <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
@@ -217,6 +218,7 @@ get_header(); ?>
 
         <div class="profissional-title">
           <strong><?=the_title()?></strong>
+          <em><?=the_field('cargo')?></em>
         </div>
       </div>
 
@@ -238,7 +240,7 @@ get_header(); ?>
 
     <div class="equipe-wrapper">
 
-      <? query_posts( array( 'post_type' => 'funcionario', 'posts_per_page' => '-1', 'category_name'  => 'parceiros', 'order' => 'DESC', 'orderby' => 'menu_order' ) );  ?>
+      <?php query_posts( array( 'post_type' => 'funcionario', 'posts_per_page' => '-1', 'category_name'  => 'parceiros', 'order' => 'DESC', 'orderby' => 'menu_order' ) );  ?>
       <?php if ( have_posts() ) : ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
@@ -249,6 +251,7 @@ get_header(); ?>
 
         <div class="profissional-title">
           <strong><?=the_title()?></strong>
+          <em><?=the_field('cargo')?></em>
         </div>
       </div>
 
