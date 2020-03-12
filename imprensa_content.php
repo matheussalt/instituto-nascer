@@ -22,8 +22,6 @@
   <div class="container">
 
     <div class="imprensa-content">
-      <img class="relato-img" src="<?=catch_that_image(0)?>" alt="<?=the_title()?>" />
-
       <div>
         <?=the_content()?>
       </div>

@@ -22,7 +22,7 @@
   <div class="container">
 
     <div class="bebe-content">
-      <img src="<?=catch_that_image(0)?>" alt="<?=the_title()?>">
+      <img src="<?=catch_that_image(1)?>" alt="<?=the_title()?>">
       <h2><?=the_title()?></h2>
       <div class="bebe-infos">
         <p><strong>Mãe: </strong><?=the_field('mae')?></p>
