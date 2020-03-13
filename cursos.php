@@ -59,7 +59,7 @@ get_header(); ?>
 
 <section class="cursos-list">
   <div class="container">
-    <? query_posts( array( 'post_type' => 'curso', 'posts_per_page' => '6' ) );  ?>
+    <? query_posts( array( 'post_type' => 'curso', 'posts_per_page' => -1 ) );  ?>
     <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
 

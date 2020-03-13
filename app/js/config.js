@@ -1,1 +1,1 @@
-const baseURL = 'http://instituto-nascer.local'
+const baseURL = 'http://institutonascer.com.br';
