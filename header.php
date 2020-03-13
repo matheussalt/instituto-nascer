@@ -107,6 +107,8 @@
   }
   </style>
 
+  <script>const baseURL = '<?=site_url()?>';</script>
+
 </head>
 
 <body <?php body_class(); ?>>
